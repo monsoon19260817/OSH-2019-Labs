@@ -146,11 +146,7 @@ kernel 开发和调试相关，**全部关闭**
 
 使用默认配置 bcm2709_defconfig 编译内核产生的 kernel7.img 大小为 **4820 KB**, 裁剪后减小为 **2774 KB**.
 
-LED 闪烁展示：
-
-<div align="center">
-<video src="led.mp4" />
-</div>
+**LED 闪烁展示见本文档同目录下的 `led.mp4`.**
 
 显示器，正常运行：
 
@@ -158,7 +154,7 @@ LED 闪烁展示：
 <img src="monitor1.jpg" />
 </div>
 
-panic 之后：
+kernel panic 之后：
 
 <div align="center">
 <img src="monitor2.jpg" />
@@ -194,7 +190,7 @@ panic 之后：
 
 使用 FAT32 文件系统。可以换做别的 FAT 文件系统，但不能是非 FAT 文件系统。
 
-因为载入 bootcode.bin 的 Soc 固件只识别 FAT 文件系统。
+因为载入 bootcode.bin 的 SoC 固件只识别 FAT 文件系统。
 
 ### /dev/sdc1 中的 kernel 启动之后为什么会加载 /dev/sdc2 中的 init 程序？
 
