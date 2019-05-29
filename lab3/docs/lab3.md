@@ -2,16 +2,16 @@
 
 ## 编译和运行方法
 
-编译需要链接 `pthread` 和 `aio` 库，并且需要支持 `C++17` 标准的编译器，在确保上述条件满足的情况下执行
+编译需要链接 `pthread` 和 `aio` 库，并且需要支持 `C++17` 标准的编译器，在确保上述条件满足的情况下，在 `file` 目录下执行
 
 ```shell
-g++ -std=c++17 -lpthread -lrt -o server main.cpp
+make
 ```
 
 完成编译，执行
 
 ```shell
-./server
+make run
 ```
 
 开始运行。
