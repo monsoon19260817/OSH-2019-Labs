@@ -1,6 +1,6 @@
 .PHONY: compile
 compile:
-	g++ -std=c++17 -lrt -lpthread -o server main.cpp
+	g++ -std=c++17 -lrt -lpthread -O3 -o server main.cpp
 
 .PHONY: clean
 clean:
